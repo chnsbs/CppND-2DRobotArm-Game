@@ -12,7 +12,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 # Find the SDL2 and SDL2_ttf libraries
 find_package(SDL2 REQUIRED)
-find_package(SDL2TTF REQUIRED)
 
 # Add an executable target with the source files
 add_executable(RobotArmGame src/main.cpp src/robot.cpp src/renderer.cpp src/controller.cpp src/game.cpp)

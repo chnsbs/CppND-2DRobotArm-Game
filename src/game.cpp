@@ -83,7 +83,8 @@ void Game::Update(Robot &robot) {
   robot.Update();
 
   distance_to_target_ = Game::distanceBetweenPoints(
-      target, SDL_Point{robot.joint3->x, robot.joint3->y});
+      target, SDL_Point{static_cast<int>(robot.joint3->x),
+                        static_cast<int>(robot.joint3->y)});
   // Check if there's target over end effector
   if (distance_to_target_ < 5.0f) {
     score++;

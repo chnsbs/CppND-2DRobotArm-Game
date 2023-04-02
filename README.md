@@ -34,7 +34,6 @@ A simple 2D robot arm game developed using C++ and SDL2. The game simulates a ro
 * SDL2 
    * Refer to https://wiki.libsdl.org/SDL2/Installation
 
-
 ## Basic Build Instructions
 
 1. Clone this repo.
